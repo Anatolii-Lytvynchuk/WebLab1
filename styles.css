@@ -1,0 +1,157 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #519912;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px;
+    background: #222;
+    color: white;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header .logo {
+     width: 120px; 
+    height: auto; 
+}
+
+
+.menu {
+    list-style: none;
+    padding: 10px 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+        .menu a:hover {
+            color: #2a1fd0;
+        }
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.history {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .history h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .history p {
+        font-size: 18px;
+        max-width: 600px;
+    }
+
+
+.table-container {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 2px solid #000000;
+}
+
+th, td {
+    padding: 40px;
+    text-align: center;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ffd800;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+    .photo-gallery img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.video-item {
+    text-align: center;
+}
+
+    .video-item video {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-item p {
+        font-size: 16px;
+        color: #555;
+        margin-top: 10px;
+    }
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #222;
+    color: white;
+}
